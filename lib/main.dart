@@ -1,7 +1,7 @@
-// import 'package:fic7_fe/pages/home_page.dart';
 import 'package:fic7_fe/common/constants/light_theme.dart';
-import 'package:fic7_fe/pages/auth/auth_page.dart';
-// import 'package:fic7_fe/pages/splash/splash_screen.dart';
+
+import 'package:fic7_fe/pages/dashboard/dashboard_page.dart';
+
 import 'package:flutter/material.dart';
 
 void main() {
@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
       title: 'FIC7-FE',
       debugShowCheckedModeBanner: false,
       theme: light,
-      home: const AuthPage(),
+      home: const DashboardPage(),
     );
   }
 }
