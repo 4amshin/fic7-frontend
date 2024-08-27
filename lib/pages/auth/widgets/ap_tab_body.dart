@@ -1,5 +1,5 @@
 import 'package:fic7_fe/pages/auth/widgets/ap_sign_in.dart';
-import 'package:fic7_fe/pages/auth/widgets/ap_sign_out.dart';
+import 'package:fic7_fe/pages/auth/widgets/ap_sign_up.dart';
 import 'package:flutter/material.dart';
 
 class ApTabBody extends StatelessWidget {
@@ -24,7 +24,7 @@ class ApTabBody extends StatelessWidget {
           if (isLoginPage) {
             return const ApSignIn();
           } else {
-            return const ApSignOut();
+            return const ApSignUp();
           }
         },
       ),
