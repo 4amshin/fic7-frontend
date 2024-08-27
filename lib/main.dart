@@ -1,6 +1,8 @@
-import 'package:fic7_fe/pages/home_page.dart';
+// import 'package:fic7_fe/pages/home_page.dart';
+import 'package:fic7_fe/common/constants/light_theme.dart';
+import 'package:fic7_fe/pages/auth/auth_page.dart';
+// import 'package:fic7_fe/pages/splash/splash_screen.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 void main() {
   runApp(const MyApp());
@@ -14,12 +16,8 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'FIC7-FE',
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-        useMaterial3: true,
-        textTheme: GoogleFonts.poppinsTextTheme(),
-      ),
-      home: const HomePage(),
+      theme: light,
+      home: const AuthPage(),
     );
   }
 }
